@@ -1,0 +1,280 @@
+body {
+    background-color: #fff !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    background: #298BCB;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+@media (min-width: 1440px) {
+    section.banner-top {
+        margin: 13% 0 0 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    section.banner-top {
+        margin: 16% 0 0 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    section.banner-top {
+        margin: 18% 0 0 0;
+    }
+}
+
+.carousel-caption p {
+    margin-bottom: 0px;
+}
+
+.bg-light {
+    background-color: #fff !important;
+    box-shadow: 1px 1px 5px #eee;
+}
+
+img {
+    width: 100%;
+}
+
+section.banners {
+    margin: 2% 0;
+}
+
+.uppercased {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+img.img-bordered {
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+section.featured {
+    margin: 3% 0;
+}
+
+.product-featured h2 {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.product-featured p {
+    color: #ccc;
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+.product-featured h3 {
+    color: #298BCB;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+section.sec-04 {
+    margin: 2% 0;
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+img.img50px {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.inline-flex h2 {
+    font-size: 1.2rem;
+}
+
+.inline-flex p {
+    color: #464646;
+    font-size: .8rem;
+}
+
+.width30 {
+    margin: auto;
+    padding: 0px 50px;
+}
+
+img.img70 {
+    width: 70% !important;
+}
+
+.pad-0 {
+    padding: 0px !important;
+}
+
+.footer-menu {
+    font-size: .6rem !important;
+    font-weight: bold;
+    color: #298BCB !important;
+    margin-top: 10%;
+}
+
+.col-1-footer p {
+    font-size: 0.6rem !important;
+    color: #b8b8b8;
+}
+
+.footer {
+    margin: 3% 0 0 0;
+    border-top: 1px solid #eee;
+    padding: 20px 0 0 0;
+}
+
+.bg-blues {
+    background: #298BCB;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.bg-blues p {
+    margin-bottom: 0;
+    font-size: .8rem;
+    padding: 5px 0;
+}
+
+.carousel-caption h1 {
+    color: #FFF774;
+    font-size: 5rem;
+}
+
+.btn-legendary {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .new-nav-link {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+    
+}
+
+.new-nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.new-nav-link {
+    display: block;
+    padding: 0.3rem 1.3rem !important;
+}
+
+.new-collapse {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.fa-search {
+    color: #fff;
+    background: #ec7da2;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: .8rem;
+}
+
+.be-the-light {
+    display: block !important;
+    padding: 0 !important;
+}
+
+img.img20 {
+    width: 20%;
+}
+
+.padding-header {
+    padding: .2rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+.padding-logo {
+    padding: 1rem 4rem;
+    position: relative;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+p.total-belanja {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.fa-shopping-cart {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.top-diskon {
+    position: absolute;
+    top: -11px;
+    right: -6px;
+    font-size: .5rem;
+    background: #298BCB;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 20px;
+}
+
+.akun-belanja-right {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+}
+
+.dropdown-toggle {
+    color: rgba(0,0,0,.5);
+}
+
+ul.dropdown-menu {
+    padding: 10px;
+}
+
+li.presentation {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    color: #000;
+    font-size: .8rem;
+}
+
+.presentation a {
+    color: #298BCB;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0.2rem transparent !important;
+}

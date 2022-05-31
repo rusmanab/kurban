@@ -1,0 +1,42 @@
+.brief .item-komentar .reply-komentar{
+    padding: 10px;
+    width: 88%;
+    resize: none !important;
+} 
+.brief .item-komentar .desk {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.brief .item-komentar .name {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.brief .item-komentar p {
+    line-height: 1.8;
+}
+
+.brief .item-komentar img-project {
+    margin-bottom: 10px;
+}
+
+.order-detail-project .item-detail .btn-win {
+    margin-top: 20px;    
+}
+.order-detail-project .item-detail .img-designer {
+    float: left;
+    margin-right: 10px;
+    width: 71px;
+    height: 71px;   
+}
+.order-detail-project .item-detail .information {
+    margin-top: 30px !important;    
+}
+.order-detail-project .item-detail .brief .item-komentar .reply-komentar{
+    padding: 10px;
+    width: 88%;
+    resize: none !important;    
+}
+
+
