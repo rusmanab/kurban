@@ -29,12 +29,12 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<img src="<?= base_url('assets/images/banner/');?>child.jpg" class="w-100">
+					<img src="<?= base_url('assets/images/banner/');?>tcare_anak.jpg" class="w-100">
 				</div>
 			</div>
 			<div class="row no-gutter">
-				<div class="col-md-6">
-					<img src="<?= base_url('assets/images/banner/');?>child.jpg" class="w-100">
+				<div class="col-md-6 order-sm-last">
+					<img src="<?= base_url('assets/images/banner/');?>tcare_timbang.png" class="w-100">
 				</div>
 				<div class="col-md-6 bg-darks">
 					<div class="p-5">

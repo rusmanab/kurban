@@ -8,7 +8,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Excellent Admin</title>
+        <title>Kurbandipelosok.com</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" />
@@ -31,7 +31,7 @@
         <link href="<?php echo base_url('assets/themes/default/layouts/layout/css/themes/darkblue.min.css')?>" rel="stylesheet" type="text/css" id="style_color" />
         <link href="<?php echo base_url('assets/themes/default/layouts/layout/css/custom.min.css')?>" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="favicon.ico" /> </head>
+        <link rel="icon" href="<?= base_url('assets/');?>images/favicon.png"  type="image/png">
     <!-- END HEAD -->
 
     <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-fixed">

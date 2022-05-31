@@ -182,7 +182,7 @@ class Api extends API_Controller{
 				$geneCode = $cekEmail->activated_key;
 				$this->load->library('kirimemail');
             
-				$register['subject']    = "Aktivasi Akun Excellent Scale"; 
+				$register['subject']    = "Aktivasi Akun Kurbandipelosok.com"; 
 				$register['genecode']   = $geneCode;
 				
 				$view                   = "email_register";
@@ -204,7 +204,7 @@ class Api extends API_Controller{
                 $errSts = 200;
                 $response['error']      = false;
                 $response['error_msg']  = "";
-                $register['subject']    = "Aktivasi Akun Excellent Scale"; 
+                $register['subject']    = "Aktivasi Akun Kurbandipelosok.com"; 
                 $register['genecode']   = $genecode;
 
                 $view                   = "email_register";

@@ -77,7 +77,7 @@
 						</tr>
 						<tr>
 							<td>
-								<h2>Yuk, mulai aktivasi akun Excellent-Scale kamu</h2>
+								<h2>Yuk, mulai aktivasi akun Kurbandipelosok.com kamu</h2>
 								<p>Sedikit lagi akunmu akan aktif. Cukup klik atau copy paste ke browser tautan berikut.</p>
 							</td>
 						</tr>
@@ -93,10 +93,10 @@
 						
 						<tr>
 							<td><p>E-mail ini dibuat otomatis, mohon tidak membalas. Jika butuh bantuan, silakan hubungi kami 
-								<a href="https://excellent-scale.com/index.php/contact">disini</a></p></td>
+								<a href="https://kurbandipelosok.com/">disini</a></p></td>
 						</tr>
 						
-						<tr>
+						<!-- <tr>
 							<td><p><small>Download Aplikasi Excellent-Scale</small></p></td>
 						</tr>
 						<tr>
@@ -105,12 +105,12 @@
 								<img src="<?php echo base_url('assets/themes/themesv2/img/googleplay.jpg')?>" class="img10email" alt="googleplay">
 								</a>
 							</td>
-						</tr>
+						</tr> -->
 						<td style="padding:24px 20px 0;">
 							<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top:1px solid #e5e7e9">
 								<tbody><tr>
 									<td style="padding:24px 0;font-family:sans-serif;font-size:12px;line-height:18px;color:#bdbec0;text-align:center">
-										<p style="margin:0">2021, PT Indah Sakti</p>
+										<p style="margin:0">2022, Kurbandipelosik.com by T.CARE</p>
 									</td>
 								</tr>
 							</tbody></table>

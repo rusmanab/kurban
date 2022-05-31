@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 			'username'      => "rusmanab@gmail.com",
 			'password'      => MD5('123123'),
 		);
-		$register['subject']    = "Verifikasi Alamat Email Kamu di Excellent Scale"; 
+		$register['subject']    = "Verifikasi Alamat Email Kamu di Kurbandipelosok.com"; 
 		$register['genecode']   = "sdfsdf";
 		
 		$view                   = "email_register";
@@ -51,7 +51,7 @@ class Welcome extends CI_Controller {
 			'username'      => "rusmanab@gmail.com",
 			'password'      => MD5('123123'),
 		);
-		$register['subject']    = "Aktivasi Akun Excellent Scale"; 
+		$register['subject']    = "Aktivasi Akun Kurbandipelosok.com"; 
 		$register['genecode']   = "sdfsdf";
 		
 		$view                   = "email_register";

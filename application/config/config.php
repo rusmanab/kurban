@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
 
 //$config['base_url'] = $http .  $_SERVER['SERVER_NAME'] . "/";
-$config['base_url'] = 'http://localhost/kurbanci/';
+$config['base_url'] = 'http://localhost/kurban/';
 
 /*
 |--------------------------------------------------------------------------

@@ -124,7 +124,7 @@
                 <h3>Pesanan #<?php echo $orders->no_order;?> Sukses</h3>
                 <div class="mt-20">
                         <p>Hai <?php echo $orders->full_name;?>,</p>
-                        <p>Terima kasih atas kepercayaanmu telah berbelanja di Excellentscale.com. Mohon segera lakukan pembayaran pesanan Anda.</p>
+                        <p>Terima kasih atas kepercayaanmu telah berkurban di Kurbandipelosik.com by T.CARE. Mohon segera lakukan pembayaran pesanan Anda.</p>
                         <br>
                         <p>Berikut adalah penjelasan tagihan pembayaran:</p>
                         <table>
@@ -219,7 +219,7 @@
                             <h1><strong>Rp. <?php 
                                         echo number_format ($total_price);
                                     ?></strong></h1>
-                            <p>Pembayaran dapat dilakukan ke salah satu nomor rekening a/n PT Excellentscale.com:</p>
+                            <p>Pembayaran dapat dilakukan ke salah satu nomor rekening a/n Kurbandipelosik.com by T.CARE:</p>
                             <table style="width: 60%;margin: auto;">
                                 <?php
                                 foreach($listBank as $b)

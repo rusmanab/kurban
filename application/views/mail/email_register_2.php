@@ -175,10 +175,10 @@
                 <div class="bg-white padding-30">
                     <div class=""><img src="<?php echo base_url('assets/themes/themesv2/img/logo-footer.png')?>" class="img20email" alt=""></div>
                     <div class="backgrayf1">
-                        <h1 class="text-left">Welcome to Excellent Scale</h1>
+                        <h1 class="text-left">Welcome to https://kurbandipelosok.com/</h1>
                         <p>
                             Dear <?php echo $full_name;?>,
-                            Welcome to Excellent Scale. Thank you for registering to our website. We look forward to having you as a part of our community!
+                            Welcome to https://kurbandipelosok.com/. Thank you for registering to our website. We look forward to having you as a part of our community!
                         </p>
                         <div class="mb-10">
                             <p class="mb-0">Name</p>
@@ -194,9 +194,9 @@
                         </a>
                         <br><br>
                         <p>
-                        <div class="text-center"><a href="<?php echo site_url();?>" role="button" class="btn btn-blue">Mulai Belanja</a></div>
+                        <div class="text-center"><a href="<?php echo site_url();?>" role="button" class="btn btn-blue">Mulai Berkurban</a></div>
                         </p><br><br>
-                        <div class="blues text-center">Copyright &copy; 2020 PT. Excellent Scale , All Rights Reserved.</div>
+                        <div class="blues text-center">Copyright &copy; 2022 https://kurbandipelosok.com/ , All Rights Reserved.</div>
                         <br>
                     </div>
                 </div>
