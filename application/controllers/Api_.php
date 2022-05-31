@@ -139,7 +139,7 @@ class Api extends API_Controller{
                 $errSts = 200;
                 $response['error']      = false;
                 $response['error_msg']  = "";
-                $register['subject']    = "Verifikasi Alamat Email Kamu di Excellent Scale"; 
+                $register['subject']    = "Verifikasi Alamat Email Kamu di Kurbandipelosok.com"; 
                 $register['genecode']   = $genecode;
                 
                 

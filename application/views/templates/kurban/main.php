@@ -7,12 +7,12 @@
     <?php
     
     if (isset($metadata)){
-        $title     = isset($metadata->post_title) ? $metadata->post_title: "KurbanPeduliPelosok";
+        $title     = isset($metadata->post_title) ? $metadata->post_title: "Kurbandipelosok.com";
         $metaTitle = "";
         $metaDesc  = "";
         $metaImage = "";
     }else{  
-        $title     = "KurbanPeduliPelosok";
+        $title     = "Kurbandipelosok.com";
         $metaTitle = $webinfo->meta_title;
         $metaDesc  = $webinfo->meta_description;
         $metaImage = $webinfo->meta_image;
@@ -43,7 +43,7 @@
     
     
     <!--Favicon-->
-    <link rel="shortcut icon" href="<?php echo base_url("assets/themes/themesv2/") ?>img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= base_url('assets/');?>images/favicon.png"  type="image/png">
     <title>kurbandipelosok.com</title>
 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/">

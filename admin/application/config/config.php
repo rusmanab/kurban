@@ -30,7 +30,7 @@ $http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' 
 $config['base_url'] = $http .  $_SERVER['SERVER_NAME'] . "/admin/";
 
 //$config['base_url'] = 'http://www.excellent-scale.com/admin/';
-$config['base_url'] = 'http://localhost/kurbanci/admin';
+$config['base_url'] = 'http://localhost/kurban/admin';
 
 /*
 |--------------------------------------------------------------------------

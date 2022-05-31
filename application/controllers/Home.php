@@ -143,7 +143,7 @@ class Home extends CI_Controller{
 			$this->load->library('kirimemail');
             
 			$register = array(
-				'subject'		=> "Selamat Datang di Excellent Scale",
+				'subject'		=> "Selamat Datang di Kurbandipelosok.com",
 				'full_name'     => $user->full_name,
 				'email'         => $user->email,
 				);
@@ -291,7 +291,7 @@ class Home extends CI_Controller{
 						$geneCode = $hasEmail->activated_key;
 						$this->load->library('kirimemail');
 					
-						$register['subject']    = "Aktivasi Akun Excellent Scale"; 
+						$register['subject']    = "Aktivasi Akun Kurbandipelosok.com"; 
 						$register['genecode']   = $geneCode;
 						
 						$view                   = "email_register";
@@ -311,7 +311,7 @@ class Home extends CI_Controller{
 				if (!$error){
 					$this->load->library('kirimemail');
 					
-					$register['subject']    = "Aktivasi Akun Excellent Scale"; 
+					$register['subject']    = "Aktivasi Akun Kurbandipelosok.com"; 
 					$register['genecode']   = $genecode;
 					
 					$view                   = "email_register";

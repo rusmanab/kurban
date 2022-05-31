@@ -325,7 +325,7 @@ footer img {
 }
 
 a.navbar-brand img {
-  height: 40px;
+  height: 50px;
 }
 
 ul.navbarmenu {
@@ -704,4 +704,59 @@ p.updatecart input {
   color: #fff;
   padding: 10px;
   border-radius: 35px;
+}
+
+span.fa.fa-shopping-cart {
+  color: #fff;
+  font-size: 24px;
+}
+
+.order-sm-last {
+  order: 0!important;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.voucher {
+  font-size: 14px;
+}
+
+.voucher input {
+  font-size: 14px;
+}
+
+.orderplacecontent input[type="text"] {
+  display: block;
+  width: 50%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.voucher p {
+  margin-bottom: 5px;
+}
+
+.detail-content h5 {
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: red;
+}
+
+form.d-flex {
+  margin-block-end: 0px;
 }

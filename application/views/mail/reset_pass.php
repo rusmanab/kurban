@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="<?php echo base_url('assets/themes/themesv2') ?>/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="<?php echo base_url('assets/themes/themesv2') ?>/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="<?php echo base_url('assets/themes/themesv2') ?>/node_modules/bootstrap/dist/css/bootstrap.min.css">
-		<meta name="author" content="ExcellentScale" />
+		<meta name="author" content="Kurbandipelosok.com" />
 		<title>Reset Password Akun</title>
         <style>
 			body{
@@ -103,10 +103,10 @@
 						</tr>
 						<tr>
 							<td><p>E-mail ini dibuat otomatis, mohon tidak membalas. Jika butuh bantuan, silakan hubungi kami 
-								<a href="https://excellent-scale.com/index.php/contact">disini</a></p></td>
+								<a href="https://kurbandipelosok.com/">disini</a></p></td>
 						</tr>
 						
-						<tr>
+						<!-- <tr>
 							<td><p><small>Download Aplikasi Excellent-Scale</small></p></td>
 						</tr>
 						<tr>
@@ -115,13 +115,13 @@
 								<img src="<?php echo base_url('assets/themes/themesv2/img/googleplay.jpg')?>" class="img10email" alt="googleplay">
 								</a>
 							</td>
-						</tr>
+						</tr> -->
 						<tr>
 							<td style="padding:24px 20px 0;">
 								<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top:1px solid #e5e7e9">
 									<tbody><tr>
 										<td style="padding:24px 0;font-family:sans-serif;font-size:12px;line-height:18px;color:#bdbec0;text-align:center">
-											<p style="margin:0">2021, PT Indah Sakti</p>
+											<p style="margin:0">2022, Kurbandipelosok.com</p>
 										</td>
 									</tr>
 								</tbody></table>

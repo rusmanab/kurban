@@ -78,19 +78,19 @@
 						<tr>
 							<td>
 								<h2>Selamat Bergabung</h2>
-								<p>Hore akun Excellent-Scale sudah aktif. Kami menyediakan berbagai macam timbangan untuk usaha kamu.</p>
+								<p>Hore akun Kurbandipelosik.com by T.CARE sudah aktif.</p>
 							</td>
 						</tr>
 						<tr>
-							<p><a href="https://excellent-scale.com/" role="button" class="btn2 btn-primary">Yuk, mulai belanja</a></p>
+							<p><a href="https://kurbandipelosok.com/" role="button" class="btn2 btn-primary">Yuk, mulai berkurban</a></p>
 							
 						</tr>						
 						<tr>
 							<td><p>E-mail ini dibuat otomatis, mohon tidak membalas. Jika butuh bantuan, silakan hubungi kami 
-								<a href="https://excellent-scale.com/index.php/contact">disini</a></p></td>
+								<a href="https://kurbandipelosok.com/">disini</a></p></td>
 						</tr>
 						
-						<tr>
+						<!-- <tr>
 							<td><p><small>Download Aplikasi Excellent-Scale</small></p></td>
 						</tr>
 						<tr>
@@ -108,7 +108,7 @@
 									</td>
 								</tr>
 							</tbody></table>
-						</td>
+						</td> -->
 					</table> 
 					    
 				</div>

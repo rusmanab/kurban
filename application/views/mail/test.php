@@ -124,7 +124,7 @@
                 <h3>Pesanan #<?php echo $orders->no_order;?> Sukses</h3>
                 <div class="mt-20">
                         <p>Hai <?php echo "username";?>,</p>
-                        <p>Terima kasih atas kepercayaanmu telah berbelanja di Excellentscale.com. Mohon segera lakukan pembayaran pesanan Anda.</p>
+                        <p>Terima kasih atas kepercayaanmu telah berkurban di Kurbandipelosok.com. Mohon segera lakukan pembayaran pesanan Anda.</p>
                         <br>
                         <p>Berikut adalah penjelasan tagihan pembayaran:</p>
                         <table>
@@ -195,7 +195,7 @@
                             <h1><strong>Rp. <?php 
                                         echo number_format ($orders->total_price);
                                     ?></strong></h1>
-                            <p>Pembayaran dapat dilakukan ke salah satu nomor rekening a/n PT Excellentscale.com:</p>
+                            <p>Pembayaran dapat dilakukan ke salah satu nomor rekening a/n Kurbandipelosok.com:</p>
                             <table style="width: 60%;margin: auto;">
                                 <?php
                                 foreach($listBank as $b)
@@ -213,7 +213,7 @@
                         </div>
                     <div class="divgrey">
                         <!-- <a href="#"><button>Detail Tagihan</button></a> -->
-                        <a href="<?php echo site_url("home");?>"><button class="btn-email">Visit Exellence Scale</button></a>
+                        <a href="<?php echo site_url("home");?>"><button class="btn-email">Visit Kurbandipelosok.com</button></a>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                 <tr>
                     <td>
                         <div class="f-8">
-                            Copyright © 2018 PT Exellence Scale. All Rights Reserved <br>
+                            Copyright © 2022 Kurbandipelosok. All Rights Reserved <br>
                             Lorem ipsum dolor sit Amet<br>
                             Jakarta Selatan Indonesia 12xxx
                         </div>
