@@ -90,7 +90,7 @@
             <!-- BEGIN FOOTER -->
             <div class="page-footer">
                 <div class="page-footer-inner"> 
-                    2022 Kurbandipelosok.com &copy; <a href="https://tcare.id/" target="_blank">T.CARE</a>
+                    2022 Kurbandipelosok.com by <a href="https://tcare.id/" target="_blank">T.CARE</a>. &copy; Copyright <a href="https://perspektiv.id" target="_blank">Perspektiv</a> 
                 </div>
                 <div class="scroll-to-top">
                     <i class="icon-arrow-up"></i>
