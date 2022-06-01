@@ -33,10 +33,10 @@
                             $userId = $this->session->userdata('f_userid');
                             if( $userId ){
 							?>
-
                                 <li><a class="nav-link" href="<?php echo site_url("myaccount")?>">Welcome, <?php echo $this->session->userdata('f_username');?></a></li>
 
                                 <li><a class="nav-link navlogin" href="<?php echo site_url('myaccount/logout') ?>">Logout</a></li>
+                                <li><a class="nav-link" href="cart"><span class="fa fa-shopping-cart"></span></a></li>
                             <?php }else{ ?>
 							<li>
 								<a class="nav-link navlogin" href="<?= site_url('login');?>">Login</a>
