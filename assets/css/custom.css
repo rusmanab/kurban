@@ -790,3 +790,7 @@ form.d-flex {
 .history-top table {
   font-size: 14px;
 }
+
+div#example_wrapper {
+  font-size: 14px;
+}
