@@ -22,3 +22,13 @@ ERROR - 2022-06-01 10:56:28 --> 404 Page Not Found:
 ERROR - 2022-06-01 10:56:42 --> 404 Page Not Found: 
 ERROR - 2022-06-01 10:56:54 --> 404 Page Not Found: 
 ERROR - 2022-06-01 10:57:02 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:21:16 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:22:11 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:22:36 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:22:46 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:22:57 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:23:03 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:24:08 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:24:37 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:24:39 --> 404 Page Not Found: 
+ERROR - 2022-06-01 13:25:16 --> Severity: Compile Error --> Cannot redeclare Home::index() C:\xampp\htdocs\kurban\application\controllers\Home.php 491

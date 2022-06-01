@@ -487,4 +487,14 @@ class Home extends CI_Controller{
         //echo $this->email->print_debugger(array('headers'));
         return $response;
     }
+
+    public function history($var=""){
+        
+        $view = 'history';
+        $data = "";
+
+        $this->themes->display($view,$data);
+        
+    }
+    
 }
