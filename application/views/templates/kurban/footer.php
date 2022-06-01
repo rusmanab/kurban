@@ -70,4 +70,4 @@
     	<?php echo $addjs . "\r\n" ?>
 
 	</body>
-	</html>
+</html>
