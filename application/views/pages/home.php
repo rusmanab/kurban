@@ -246,7 +246,7 @@
 										<div class="carousel-caption">
 											<img src="<?= base_url('assets/images/testimonial/');?>rika-hapsari.png" class="w-80">
 											<h1>Rika Hapsari</h1>
-											<p>Terima kasih T.CARE sudah mau menjemput kurban saya dirumah. Jadi saya tidak perlu repot-repot untuk berkurban di masa pandemi ini.</p>
+											<p>Terima kasih T.CARE sudah mau untuk menjemput kurban saya dirumah. Jadi saya tidak perlu repot-repot untuk berkurban di masa pandemi ini.</p>
 										</div>
 									</div>
 								</div>
