@@ -10,41 +10,22 @@
 					<h2>Detail Profile</h2>
 					<div class="row produk">
 						<div class="col-md-12">
-							<form class="row g-3">
+							<form class="row g-3" method="POST" action="<?php echo base_url("myaccount/update_profile");?>" enctype="multipart/form-data">
 								<div class="col-md-6">
-									<label for="nama" class="form-label">Nama Lengkap</label>
-									<input type="text" class="form-control" id="nama">
+									<label for="full_name" class="form-label">Nama Lengkap</label>
+									<input type="text" class="form-control" id="full_name" name="full_name" value="<?= $userInfo->full_name;?>">
 								</div>
 								<div class="col-md-6">
-									<label for="nomor" class="form-label">Nomor Telepon</label>
-									<input type="nomor" class="form-control" id="nomor">
+									<label for="phone_number" class="form-label">Nomor Telepon</label>
+									<input type="text" class="form-control" id="phone_number" name="phone_number" value="<?= $userInfo->phone_number;?>" readonly>
 								</div>
 								<div class="col-md-6">
-									<label for="inputEmail4" class="form-label">Email</label>
-									<input type="email" class="form-control" id="inputEmail4">
-								</div>
-								<div class="col-md-6">
-									<label for="inputPassword4" class="form-label">Password</label>
-									<input type="password" class="form-control" id="inputPassword4">
+									<label for="email" class="form-label">Email</label>
+									<input type="email" class="form-control" id="email" name="email" value="<?= $userInfo->email;?>">
 								</div>
 								<div class="col-12">
-									<label for="inputAddress" class="form-label">Address</label>
-									<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-								</div>
-								<div class="col-md-6">
-									<label for="inputCity" class="form-label">City</label>
-									<input type="text" class="form-control" id="inputCity">
-								</div>
-								<div class="col-md-4">
-									<label for="inputState" class="form-label">State</label>
-									<select id="inputState" class="form-select">
-										<option selected>Choose...</option>
-										<option>...</option>
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputZip" class="form-label">Zip</label>
-									<input type="text" class="form-control" id="inputZip">
+									<label for="address" class="form-label">Alamat</label>
+									<input type="text" class="form-control" id="address" name="address" value="<?= $userInfo->address;?>">
 								</div>
 								<div class="col-12">
 									<button type="submit" class="btn btn-primary">Simpan</button>

@@ -7,9 +7,7 @@
 					<img src="<?= base_url("assets/images/background/");?>kat-yukawa-K0E6E0a0R3A-unsplash-700x990.jpg" class="w-100">
 				</div>
 				<div class="col-md-8">
-					<?php foreach ($ambilkategori as $isi) { ?>
-						<?= $isi->category_desc ;?>
-					<?php } ?>
+					<?= $catgory->category_desc ;?>
 					<div class="row produk">
 						<?php foreach($products as $row){ ?>
 						<div class="col-md-4">
@@ -17,11 +15,11 @@
 								<div class="card-body">
 									<?php
 									$fileName = base_url($row->post_image_thumbs);
-									
+								
 									if(file_exists($row->post_image_thumbs))
 										$fileName = base_url($row->post_image_thumbs);
 									else
-										$fileName = base_url("assets/themes/themesv2/img/product/no_image.png");
+										$fileName = base_url("admin/assets/themes/default/no_image.png");
 									?>
 									<img src="<?= $fileName;?>" class="w-100">
 									<div class="detail-content">
@@ -42,7 +40,8 @@
 								</div>
 							</div>
 						</div>
-						<?php } ?>						
+						<?php } ?>
+						
 						
 					</div>
 				</div>

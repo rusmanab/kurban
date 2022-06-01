@@ -95,8 +95,9 @@ class Mglobal extends CI_Model{
         
     }
     
-    public function getUserInfo($id){ 
-        $q = "SELECT u.*, ua.address, ua.province, ua.city FROM tbl_users u ";
+    public function getUserInfo($id){
+        // ua.address,  
+        $q = "SELECT u.*, ua.province, ua.city FROM tbl_users u ";
         $q.= "LEFT JOIN tbl_user_address ua ON ua.user_id = u.id ";
         $q.= "WHERE u.id='".$id."'";
        

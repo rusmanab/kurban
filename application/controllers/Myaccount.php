@@ -61,6 +61,7 @@ class Myaccount extends MY_Controller{
         
         $this->themes->userdisplay($view,$data);
     }
+
     public function profile_update(){
         
         $id              = $this->input->post("id", true); 
@@ -505,4 +506,30 @@ class Myaccount extends MY_Controller{
             ->set_content_type('application/json')
             ->set_output($response);
     }
+
+    public function update_profile()
+    {
+        $full_name      = $this->input->post('full_name');
+        $phone_number   = $this->input->post('phone_number');
+        $email          = $this->input->post('email');
+        $address        = $this->input->post('address');
+
+                // var_dump($id_unique);
+                // exit();
+
+        $data_update    = array(
+            'full_name'     => $full_name,
+            'phone_number'  => $phone_number,
+            'email'         => $email,
+            'address'       => $address
+        );
+
+        $where          = array('phone_number' => $phone_number);
+        $res            = $this->db->update('tbl_users',$data_update,$where);
+
+        redirect('myaccount');
+
+    }
+
+
 }
