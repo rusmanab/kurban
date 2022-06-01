@@ -13,3 +13,12 @@ ERROR - 2022-06-01 08:55:05 --> Severity: Notice --> Undefined variable: no_telp
 ERROR - 2022-06-01 08:55:05 --> Severity: Notice --> Undefined variable: no_telp C:\xampp\htdocs\kurban\application\controllers\Myaccount.php 528
 ERROR - 2022-06-01 08:55:05 --> Query error: Unknown column 'no_telp' in 'where clause' - Invalid query: UPDATE `tbl_users` SET `nama_klien` = NULL, `no_telp` = NULL, `email` = 'me@ahmadmulyana.my.id', `alamat` = NULL
 WHERE `no_telp` IS NULL
+ERROR - 2022-06-01 10:45:47 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:46:16 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:46:22 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:54:16 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:56:22 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:56:28 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:56:42 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:56:54 --> 404 Page Not Found: 
+ERROR - 2022-06-01 10:57:02 --> 404 Page Not Found: 
