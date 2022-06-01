@@ -24,7 +24,7 @@
                                             <div class="actions btn-set">
                                                     <a href="<?php echo site_url($urlBase) ?>" id="back" class="btn default">
                                                         <i class="fa fa-angle-left"></i> Back</a>
-                                                    <button class="btn btn-success" type="submit">
+                                                    <button class="btn btn-default" type="submit">
                                                         <i class="fa fa-check"></i> Save</button>
                                                    
                                                 </div>

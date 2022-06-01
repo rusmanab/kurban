@@ -29,9 +29,9 @@ class Mpost extends MY_Model{
                         array('db'=>'post_status', 'dt'=>3,
                              'formatter' => function( $d, $row ){
                                     
-                                    $status = '<span class="label label-warning"> Unpublish </span>';
+                                    $status = '<span class="badge badge-danger">Unpublish</span>';
                                     if ( $d ==1 ){
-                                        $status = '<span class="label label-primary"> Publish </span>';
+                                        $status = '<span class="badge badge-success">Publish</span>';
                                     }
                                     
                                     return $status;

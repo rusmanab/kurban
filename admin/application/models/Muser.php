@@ -29,9 +29,9 @@ class Muser extends MY_Model{
                         array(  'db'=>'status', 'dt'=>3, 
                                 'formatter' => function( $d, $row ){
                                     
-                                    $status = '<span class="label label-danger"> Inactive </span>';
+                                    $status = '<span class="badge badge-danger">Inactive</span>';
                                     if ( $d ==1 ){
-                                        $status = '<span class="label label-primary"> Active </span>';
+                                        $status = '<span class="badge badge-success">Active</span>';
                                     }
                                     
                                     return $status;

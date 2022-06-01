@@ -49,7 +49,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-actions">
-                                                <input type="submit" class="btn green mini" value="Add to menu" />
+                                                <input type="submit" class="btn btn-default mini" value="Add to menu" />
                                             </div>
                                         <?php echo form_close();?>
                                     
@@ -80,7 +80,7 @@
                                         <?php } ?>
                                         </div>
                                         <hr />
-                                        <input type="submit" class="btn green mini" value="Add to menu" />
+                                        <input type="submit" class="btn btn-default mini" value="Add to menu" />
                                         <?php echo form_close();?>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@
                                         <?php } ?>
                                         </div>
                                         <hr />
-                                        <input type="submit" class="btn green mini" value="Add to menu" />
+                                        <input type="submit" class="btn btn-default mini" value="Add to menu" />
                                         <?php echo form_close();?>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
 														<a href="<?php echo site_url('menu/delete/'.$m->id )?>">Delete Menu</a>
 														
 													</div>
-                                                    <input type="submit" class="btn green" value="Save" />
+                                                    <input type="submit" class="btn btn-default" value="Save" />
                                                     </div>
                                                     <?php echo form_close();?>
                                                 </div>

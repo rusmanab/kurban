@@ -1,0 +1,122 @@
+.page-header.navbar {
+    background-color: #046ba5 !important;
+}
+
+.page-sidebar .page-sidebar-menu>li>a {
+    color: #364150;
+    border-top: 1px solid #fff !important;
+}
+
+.page-sidebar .page-sidebar-menu>li>a>i {
+    color: #364150 !important;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu>li.active>a, .page-sidebar .page-sidebar-menu .sub-menu>li.open>a {
+    color: #364150;
+    background: #fff !important;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu>li>a {
+    color: #364150;
+}
+
+.page-sidebar, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover {
+    background-color: #fff;
+}
+
+.page-sidebar .page-sidebar-menu>li.open>a, .page-sidebar .page-sidebar-menu>li:hover>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li:hover>a {
+    background: #41af96 !important;
+    color: #364150;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu>li.active>a, .page-sidebar .page-sidebar-menu .sub-menu>li.open>a, .page-sidebar .page-sidebar-menu .sub-menu>li:hover>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu>li:hover>a {
+    background: #41af96!important;
+    color: #fff;
+}
+
+img.logo-default {
+    height: 30px;
+}
+
+.page-sidebar .page-sidebar-menu>li.active.open>a, .page-sidebar .page-sidebar-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
+    background: #41af96;
+    border-top-color: transparent;
+    color: #fff;
+}
+
+.page-content-wrapper a {
+    text-shadow: none;
+    color: #046ba5;
+    text-decoration: none;
+}
+
+.page-content-wrapper a:hover {
+    text-decoration: none;
+}
+
+.label-warning {
+    background-color: #41af96;
+    border-radius: 35px !important;
+    padding: 2px 10px;
+}
+
+.label-primary {
+    background-color: #046ba5;
+    border-radius: 35px !important;
+    padding: 2px 10px;
+}
+
+.btn {
+    padding: 2px 10px;
+    border-radius: 35px !important;
+}
+
+.btn-default {
+    background: #046ba5;
+    color: #fff !important;
+    border-color: #046ba5;
+}
+
+.btn-default:hover {
+    background: #015c8f;
+    color: #fff !important;
+    border-color: #015c8f;
+}
+
+.btn-default:focus {
+    background: #015c8f;
+    color: #fff !important;
+    border-color: #015c8f;
+}
+
+.btn-default:active {
+    background: #015c8f;
+    color: #fff !important;
+    border-color: #015c8f;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.label-danger, .label-warning {
+    font-size: 11px!important;
+    font-weight: 300;
+    height: 18px;
+    color: #fff;
+    padding: 3px 6px;
+    -webkit-border-radius: 12px!important;
+    -moz-border-radius: 12px!important;
+    border-radius: 12px!important;
+    text-shadow: none!important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.label-warning {
+    background: #28a745;
+}
+
+.label-danger {
+    background: #ed6b75;
+}

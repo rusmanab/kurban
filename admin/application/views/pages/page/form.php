@@ -89,7 +89,7 @@
                                         
                                         
                                     
-										      <button class="btn blue" type="submit"><i class="icon-ok"></i> Save</button>
+										      <button class="btn btn-default" type="submit"><i class="icon-ok"></i> Save</button>
 										      <button class="btn" type="button" id="btn-frmcancel">Cancel</button>
 										
                             			<?php
