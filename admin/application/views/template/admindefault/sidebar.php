@@ -16,7 +16,7 @@
                             </li>
                           
                             
-                            <li class="nav-item<?php echo $urlBase=='banner' || $urlBase=='slider' || $urlBase=='categorypromo' ? " active open":"" ?>">
+                            <!-- <li class="nav-item<?php echo $urlBase=='banner' || $urlBase=='slider' || $urlBase=='categorypromo' ? " active open":"" ?>">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-briefcase"></i>
                                     <span class="title">Promo</span>
@@ -34,7 +34,7 @@
                                         <a href="<?php echo site_url('categorypromo') ?>" class="nav-link "> <?php echo $this->lang->line('category')?></a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="nav-item<?php echo $urlBase=='product' || $urlBase=='productfeatured' || $urlBase=='productspecial' || $urlBase=='productbestseller' || $urlBase=='productnewarrival' || $urlBase=='categoryproduct' || $urlBase=='brand' || $urlBase=='videos' ? " active open":"" ?>">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-briefcase"></i>
@@ -71,9 +71,9 @@
                                     <li class="nav-item<?php echo $urlBase=='brand'? " active open":"" ?>">
                                         <a href="<?php echo site_url('brand') ?>" class="nav-link "> <?php echo $this->lang->line('brand')?></a>
                                     </li>
-                                    <li class="nav-item<?php echo $urlBase=='videos'? " active open":"" ?>">
+                                    <!-- <li class="nav-item<?php echo $urlBase=='videos'? " active open":"" ?>">
                                         <a href="<?php echo site_url('videos') ?>" class="nav-link "> <?php echo $this->lang->line('video')?></a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li class="nav-item<?php echo $urlBase=='orders' ? " active":"" ?>">
@@ -99,7 +99,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item<?php echo $urlBase=='post' || $urlBase=='category' ? " active open":"" ?>">
+                            <!-- <li class="nav-item<?php echo $urlBase=='post' || $urlBase=='category' ? " active open":"" ?>">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-docs"></i>
                                     <span class="title"><?php echo $this->lang->line('post')?></span>
@@ -117,17 +117,17 @@
                                         <a href="<?php echo site_url('category') ?>" class="nav-link "> <?php echo $this->lang->line('category')?></a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item<?php echo $urlBase=='pages' ? " active":"" ?>">
+                            </li> -->
+                            <!-- <li class="nav-item<?php echo $urlBase=='pages' ? " active":"" ?>">
                                 <a href="<?php echo site_url('pages') ?>">
                                     <i class="icon-layers"></i>
                                     <span class="title">Pages</span>
                                     <?php echo $urlBase=='pages' ? '<span class="selected"></span>':'' ?>
                                 </a>
-                            </li>
+                            </li> -->
                             
 
-                            <li class="nav-item<?php echo $urlBase=='ourclients' ? " active open":"" ?>">
+                            <!-- <li class="nav-item<?php echo $urlBase=='ourclients' ? " active open":"" ?>">
                                 <a href="#" class="nav-link nav-toggle">
                                     <i class="icon-tag"></i>
                                     <span class="title">Client</span>
@@ -142,7 +142,7 @@
                                         <a href="<?php echo site_url('ourclients/add') ?>" class="nav-link "> Add Client</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             
                             <li class="nav-item <?php echo $urlBase=='setting' ? " active":"" ?>">
                                 <a href="<?php echo site_url('setting') ?>">
@@ -151,13 +151,13 @@
                                     <?php echo $urlBase=='setting' ? '<span class="selected"></span>':'' ?>
                                 </a>
                             </li>
-                            <li class="nav-item <?php echo $urlBase=='menu' ? " active":"" ?>">
+                            <!-- <li class="nav-item <?php echo $urlBase=='menu' ? " active":"" ?>">
                                 <a href="<?php echo site_url('menu') ?>">
                                     <i class="icon-wrench"></i>
                                     <span class="title">Menu</span>
                                     <?php echo $urlBase=='menu' ? '<span class="selected"></span>':'' ?>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item<?php echo $urlBase=='users' || $urlBase=='userlevel' ? " active open":"" ?>">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-users "></i>
