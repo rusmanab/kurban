@@ -22,9 +22,9 @@ class Mcoupon extends MY_Model{
                     		  }),  
                         array( 'db' => 'code',  'dt' => 2),   
                         array( 'db' => 'isactive',  'dt' => 3, 'formatter' => function( $d, $row ) {
-                                $status = "<label class='label label-info'>Disable</label>";
+                                $status = "<span class='badge badge-danger'>Disable</span>";
                     		    if ( $row['isactive'] == 1 ){
-                    		        $status = "<label class='label label-warning'>Enable</label>"; 
+                    		        $status = "<span class='badge badge-success'>Enable</span>"; 
                     		    }
                                 return $status;
                     		  }),            

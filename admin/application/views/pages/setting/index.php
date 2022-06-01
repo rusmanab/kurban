@@ -147,7 +147,7 @@
                     								</div>
                                                 </div>
                                             </div>
-                                            <button class="btn blue" type="button" id="btn-save"><i class="icon-ok"></i> Save</button>
+                                            <button class="btn btn-default" type="button" id="btn-save"><i class="icon-ok"></i> Save</button>
 										    <button class="btn" type="button" id="btn-frmcancel">Cancel</button>
 										
                                 			<?php

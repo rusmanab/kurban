@@ -166,8 +166,8 @@
                                         $nama_status = $n->nama_status;
                                         $label_color = $n->label_color;
                                         if ( $n->methode_bayar_id == 4){
-                                            $nama_status = "Tunggu kompirmasi admin";
-                                            $label_color = "label label-warning";
+                                            $nama_status = "Menunggu Konfirmasi Admin";
+                                            $label_color = "badge badge-info";
                                         }
                                     ?> 
                                     <tr>

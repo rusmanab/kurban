@@ -32,6 +32,9 @@
         <link href="<?php echo base_url('assets/themes/default/layouts/layout/css/custom.min.css')?>" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel="icon" href="<?= base_url('assets/');?>images/favicon.png"  type="image/png">
+
+        <!-- New CSS -->
+        <link href="<?= base_url('assets/css/');?>admin.css" rel="stylesheet" type="text/css">
     <!-- END HEAD -->
 
     <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-fixed">
@@ -87,7 +90,7 @@
             <!-- BEGIN FOOTER -->
             <div class="page-footer">
                 <div class="page-footer-inner"> 
-                    2019 &copy; Excellent
+                    2022 Kurbandipelosok.com &copy; <a href="https://tcare.id/" target="_blank">T.CARE</a>
                 </div>
                 <div class="scroll-to-top">
                     <i class="icon-arrow-up"></i>

@@ -176,7 +176,7 @@
                                                 <div class="form-actions fluid">
                                                     <div class="row">
                                                         <div class="col-md-offset-3 col-md-9">
-                                                            <button class="btn green" type="submit"><?php echo $this->lang->line('submit')?></button>
+                                                            <button class="btn btn-default" type="submit"><?php echo $this->lang->line('submit')?></button>
                                                             <button class="btn default" type="button" id="btn-frmcancel"><?php echo $this->lang->line('batal')?></button>
                                                         </div>
                                                     </div>
