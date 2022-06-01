@@ -244,13 +244,13 @@
 								<div class="carousel-item active">
 									<div class="container">
 										<div class="carousel-caption">
-											<img src="<?= base_url('assets/images/testimonial/');?>man.png" class="w-80">
-											<h1>Example headline.</h1>
-											<p>Some representative placeholder content for the first slide of the carousel.</p>
+											<img src="<?= base_url('assets/images/testimonial/');?>rika-hapsari.png" class="w-80">
+											<h1>Rika Hapsari</h1>
+											<p>Terima kasih T.CARE sudah mau untuk menjemput kurban saya dirumah. Jadi saya tidak perlu repot-repot untuk berkurban di masa pandemi ini.</p>
 										</div>
 									</div>
 								</div>
-								<div class="carousel-item">
+								<!-- <div class="carousel-item">
 									<div class="container">
 										<div class="carousel-caption">
 											<img src="<?= base_url('assets/images/testimonial/');?>man.png" class="w-80">
@@ -258,16 +258,7 @@
 											<p>Some representative placeholder content for the first slide of the carousel.</p>
 										</div>
 									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="container">
-										<div class="carousel-caption">
-											<img src="<?= base_url('assets/images/testimonial/');?>man.png" class="w-80">
-											<h1>Example headline.</h1>
-											<p>Some representative placeholder content for the first slide of the carousel.</p>
-										</div>
-									</div>
-								</div>
+								</div> -->
 							</div>
 							<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
