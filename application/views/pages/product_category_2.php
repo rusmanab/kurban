@@ -7,7 +7,7 @@
 					<img src="<?= base_url("assets/images/background/");?>kat-yukawa-K0E6E0a0R3A-unsplash-700x990.jpg" class="w-100">
 				</div>
 				<div class="col-md-8">
-					<?php foreach ($catgory as $isi) { ?>
+					<?php foreach ($ambilkategori as $isi) { ?>
 						<?= $isi->category_desc ;?>
 					<?php } ?>
 					<div class="row produk">
@@ -42,8 +42,7 @@
 								</div>
 							</div>
 						</div>
-						<?php } ?>
-						
+						<?php } ?>						
 						
 					</div>
 				</div>
