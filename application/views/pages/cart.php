@@ -26,7 +26,7 @@
                         <tr>
 							<th style="text-align:center">QTY</th>
 							<th>Nama Produk</th>
-							<th style="text-align:center">Kategori</th>
+							<!-- <th style="text-align:center">Kategori</th> -->
 							<th style="text-align:right">Harga</th>
 						</tr>
                         <?php 
@@ -40,7 +40,7 @@
 							<td id="nama_produk">
                                 <?php echo $c->product_name; ?>
                             </td>
-                            <td style="text-align:center" id="kategori">#KURBANdiRendang</td>
+                            <!-- <td style="text-align:center" id="kategori">#KURBANdiRendang</td> -->
                             <td style="text-align:right" id="harga">
                                 <?php
                                 $price =  number_format($c->price);
@@ -58,14 +58,14 @@
                         </tr>
                         <?php } ?>
                         <tr>
-							<td colspan="2"> </td>
+							<td> </td>
 							<td class="right"><strong>Total</strong></td>
 							<td style="text-align:right"><strong>Rp. <?php echo number_format($grand_total); ?></strong></td>
 						</tr>
                     </table>
                     <?php } ?>
 
- 					<button class="btn btn-primary" style="float: right;" id="pay-button">Checkout</button>
+ 					<button class="btn btn-primary" style="float: right;" id="pay-button">Update Cart</button>
                     <?php echo form_close();?>
 				</div>
 			</div>
