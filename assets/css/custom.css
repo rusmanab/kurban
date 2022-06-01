@@ -6,7 +6,7 @@
 
 /* Show it is fixed to the top */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   background: #fafafa;
 }
 
@@ -406,6 +406,10 @@ body.checkout {
   background: #046ba5;
 }
 
+body.history {
+  background: #046ba5;
+}
+
 main.checkouts {
   margin-top: 70px;
   background: #fff;
@@ -533,7 +537,7 @@ section.donate-top {
 
 .navlogin {
   background: #41af96;
-  padding: 3px 20px;
+  padding: 3px 20px !important;
   border-radius: 35px;
 }
 
@@ -597,6 +601,7 @@ section.profiles table {
 
 ul.navbarmenu a.nav-link {
   font-size: 14px;
+  color: #fff !important;
 }
 
 .paket .col-md-4 {
@@ -768,4 +773,20 @@ form.d-flex {
 
 .donate-top .produk {
   margin-top: 20px;
+}
+
+.history-top {
+  margin-top: 70px;
+  background: #fff;
+  padding: 40px 0px;
+}
+
+.history-top h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.history-top table {
+  font-size: 14px;
 }

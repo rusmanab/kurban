@@ -24,7 +24,7 @@
 						<a class="nav-link" href="<?= site_url();?>">Home</a>
 					</li>
 					<li>
-						<a class="nav-link" href="#">History</a>
+						<a class="nav-link" href="<?= site_url('history');?>">History</a>
 					</li>
 					<li>
 						<a class="nav-link" href="https://tcare.id/" target="_blank">T.CARE</a>

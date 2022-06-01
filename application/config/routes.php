@@ -60,6 +60,7 @@ $route['product']   = 'product';
 $route['video']     = 'video';
 $route[':any']      = "home";
 //$route[':any']      = 'home';
+$route['history']   = 'history';
 
 
 //$route[':any/:any']          = 'home';
