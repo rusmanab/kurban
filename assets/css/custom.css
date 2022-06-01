@@ -760,3 +760,12 @@ span.fa.fa-shopping-cart {
 form.d-flex {
   margin-block-end: 0px;
 }
+
+.donate-top p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.donate-top .produk {
+  margin-top: 20px;
+}

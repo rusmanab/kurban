@@ -172,6 +172,12 @@
 	.donate-top h1 {
 		margin-top: 20px;
 	}
+	.testimonial .carousel-caption {
+		bottom: -19.75rem;
+	}
+	.testimonial .carousel-inner {
+		height: 350px;
+	}
 }
 
 @media (min-width: 767px) {
