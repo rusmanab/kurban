@@ -38,7 +38,7 @@
                         <tr class="orderplacecontent">
                             <td id="qty"><?php echo form_input(array('name' => 'qty[]', 'value' => $c->qty, 'class' => 'form-control uksiz', 'maxlength' => '3', 'size' => '5')); ?></td>
 							<td id="nama_produk">
-                                <?php echo $c->product_name; ?>
+                                #<?php echo $c->product_name; ?>
                             </td>
                             <!-- <td style="text-align:center" id="kategori">#KURBANdiRendang</td> -->
                             <td style="text-align:right" id="harga">
