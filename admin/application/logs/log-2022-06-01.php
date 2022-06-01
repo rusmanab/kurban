@@ -1432,3 +1432,9 @@ DEBUG - 2022-06-01 16:05:03 --> UTF-8 Support Enabled
 DEBUG - 2022-06-01 16:05:03 --> Global POST, GET and COOKIE data sanitized
 DEBUG - 2022-06-01 16:05:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
 DEBUG - 2022-06-01 16:05:03 --> Total execution time: 0.1401
+DEBUG - 2022-06-01 16:10:42 --> UTF-8 Support Enabled
+DEBUG - 2022-06-01 16:10:42 --> No URI present. Default controller set.
+DEBUG - 2022-06-01 16:10:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-01 16:10:42 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+ERROR - 2022-06-01 16:10:42 --> Could not find the language line "general_summary"
+DEBUG - 2022-06-01 16:10:42 --> Total execution time: 0.0821
