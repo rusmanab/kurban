@@ -808,3 +808,8 @@ input.vouchercoupon {
 button#pay-button {
   font-size: 14px;
 }
+
+.checkout-top .btn-success {
+  font-size: 14px;
+  margin-left: 5px;
+}
