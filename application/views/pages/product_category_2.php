@@ -7,9 +7,7 @@
 					<img src="<?= base_url("assets/images/background/");?>kat-yukawa-K0E6E0a0R3A-unsplash-700x990.jpg" class="w-100">
 				</div>
 				<div class="col-md-8">
-					<?php foreach ($catgory as $isi) { ?>
-						<?= $isi->category_desc ;?>
-					<?php } ?>
+					<?= $catgory->category_desc ;?>
 					<div class="row produk">
 						<?php foreach($products as $row){ ?>
 						<div class="col-md-4">

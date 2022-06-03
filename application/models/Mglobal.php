@@ -685,7 +685,7 @@ class Mglobal extends CI_Model{
     public function userLogin($usernama,$password){
         $q = "SELECT u.* FROM tbl_users u LEFT JOIN ";
         $q.= "tbl_level l ON l.id = u.level_id ";
-        $q.= "WHERE u.username='".$usernama."' AND u.password='".$password."' AND u.status='1'";
+        $q.= "WHERE u.phone_number='".$usernama."' AND u.password='".$password."' AND u.status='1'";
         
         $res = $this->db->query($q);
         return $res->row();
@@ -924,7 +924,7 @@ class Mglobal extends CI_Model{
             $WHERE = " WHERE category_type='".$tipe."'";
         }
         
-        $q = "SELECT id,category_name,slug,IFNULL(image,'') as image ";
+        $q = "SELECT id,category_name, category_desc,slug,IFNULL(image,'') as image ";
         $q.= "FROM tbl_category ".$WHERE." ORDER BY category_name " ;
         $res = $this->db->query($q);
         
