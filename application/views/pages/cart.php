@@ -72,6 +72,7 @@
                     </table>
                     <?php } ?>
 
+ 					<button class="btn btn-success" style="float: right;">Checkout</button>
  					<button class="btn btn-primary" style="float: right;" id="pay-button">Update Cart</button>
                     <?php echo form_close();?>
 				</div>
