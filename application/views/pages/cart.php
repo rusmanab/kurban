@@ -58,13 +58,15 @@
                         </tr>
                         <?php } ?>
 						<tr>
-							<td colspan="2"> </td>
-							<td class="right"><strong>Kupon</strong> <input type="text" name="kupon" id="kupon"/> <button id="btnKupon" class="btn btn-default" type="button"><i class="fa fa-refresh"></i></button></td>
+							<td colspan="2">
+								Masukan Voucher
+								<input type="text" name="kupon" id="kupon" class="form-control vouchercoupon" />
+								<button id="btnKupon" class="btn btn-default" type="button"><i class="fa fa-refresh"></i></button>
+							</td>
 							<td style="text-align:right"><strong>0</strong></td>
 						</tr>
                         <tr>
-							<td> </td>
-							<td class="right"><strong>Total</strong></td>
+							<td colspan="2"><strong>Total</strong></td>
 							<td style="text-align:right"><strong>Rp. <?php echo number_format($grand_total); ?></strong></td>
 						</tr>
                     </table>
