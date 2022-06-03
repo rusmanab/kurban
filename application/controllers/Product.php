@@ -47,7 +47,7 @@ class Product extends CI_Controller{
             $data['productCategory'] = $this->mglobal->getProductCategory($product->product_id);
             $data['producsImage']    = $this->mglobal->getImagesProduct($product->product_id);
             $data['medias']          = $this->mglobal->getMedias($product->product_id);
-            $data['relatedProduk']   = $relatedProduk;
+            //$data['relatedProduk']   = $relatedProduk;
             $data['mcategoryHidden'] = true;
             $data['rating_value']    = 2;
             

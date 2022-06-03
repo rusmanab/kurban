@@ -57,6 +57,11 @@
                                 ?>
                         </tr>
                         <?php } ?>
+						<tr>
+							<td colspan="2"> </td>
+							<td class="right"><strong>Kupon</strong> <input type="text" name="kupon" id="kupon"/> <button id="btnKupon" class="btn btn-default" type="button"><i class="fa fa-refresh"></i></button></td>
+							<td style="text-align:right"><strong>0</strong></td>
+						</tr>
                         <tr>
 							<td> </td>
 							<td class="right"><strong>Total</strong></td>
@@ -81,7 +86,10 @@
 </main>
 
 <script type="text/javascript">
+	$("#btnKupon").on("click", function(){
+		
 
+	})
 	$('#pay-button').click(function (event) {
 		event.preventDefault();
 		$(this).attr("disabled", "disabled");

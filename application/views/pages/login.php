@@ -34,7 +34,7 @@
 						echo form_open('login_submit', $attr);
 						?> 
 							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
+								<label for="email" class="form-label">Nomor Handphone</label>
 								<input type="text" name="email" class="form-control" id="email" aria-describedby="email">
 							</div>
 							<div class="mb-3">
