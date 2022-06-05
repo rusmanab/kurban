@@ -300,10 +300,22 @@ class Cart extends MY_Controller{
             $dataUpdate = array(
                             'total_price' => $grandTotal,
                             'total_diskon'=> $total_diskon,
+                            'status_id'   => 2
                             );
             $this->db->where('id', $order_Id);
 
             if ( $this->db->update('tbl_orders', $dataUpdate)){
+                $tbl_order_history = [
+                    'no_order'      => $noorder,
+                    'order_id'      => $order_Id,
+                    'comment'       => "Pembayaran menuggu diverifikasi",
+                    'status_id'     => 2,
+                    'customer_notif'=> "Pembayaran menuggu diverifikasi",
+                    'created_date'  => $date,
+                ];
+
+                $this->db->insert('tbl_order_history', $tbl_order_history);
+
                 $error = false;
             }else{
                 $error = true;
