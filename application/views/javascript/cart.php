@@ -1,6 +1,7 @@
 <script type="text/javascript">
 $(document).ready(function(e){
     $("#btnKupon").on("click", function(){
+       
 		let voucher = $("#kupon").val();
 		$.ajax({
 			type: "post",
@@ -15,7 +16,12 @@ $(document).ready(function(e){
 		  	}
 		});
 
-	})
+	});
+    $("#checkout").on("click", function(){
+        $("#formCart").attr('action','<?= site_url('cart/order_confirm') ?>');
+        $("#formCart").submit();
+	});
+    
 	 
     $(".btn-plus").on("click", function(e){
         var rowId = $(this).attr("data-id");

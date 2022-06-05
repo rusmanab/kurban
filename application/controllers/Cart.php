@@ -223,17 +223,14 @@ class Cart extends MY_Controller{
     public function order_confirm(){
         
         $userId         = $this->getUserid();
+        $kupon          = $this->input->post("kupon", true);
+        $address_id     = 0;//$this->input->post("address_id", true);
+        $idCart         = $this->input->post("id", true);
         
-        $address_id     = $this->input->post("address_id", true);
-        $idCart         = $this->input->post("choose", true);
-        
-        $date = date('Y-m-d H:i:s');
-        
-        $noorder = date('Ymd');
-        
-        $noorder = $userId . $noorder . substr(mt_rand(),0,4);
-       
-        $ipnumber = "";
+        $date           = date('Y-m-d H:i:s');        
+        $noorder        = date('Ymd');        
+        $noorder        = $userId . $noorder . substr(mt_rand(),0,4);       
+        $ipnumber       = "";
         
         $newOrder = array(
                         'no_order'      => $noorder,
@@ -279,17 +276,70 @@ class Cart extends MY_Controller{
                     $total_diskon+= $diskon_price;
                 }
             }
-           
+            if ( $kupon ){
+                $res    = $this->mglobal->getVoucher($kupon);
+                if ($res){
+                    
+                    $insertCoupon = array(
+                        'coupon_id' => $res->id,
+                        'no_order' => $noorder,
+                        'order_id'  => $order_Id,
+                        'user_id' => $userId,
+                        'amount' => $res->value,
+                        'date_added' => $date
+                    );   
+                    if ( $this->db->insert('tbl_coupon_history', $insertCoupon)){
+                        $total_diskon+= $res->value;
+                        $total_diskon-= $res->value;
+                    }
+                }
+            }
+
+           $error = false;
             
             $dataUpdate = array(
                             'total_price' => $grandTotal,
                             'total_diskon'=> $total_diskon,
                             );
             $this->db->where('id', $order_Id);
-            $this->db->update('tbl_orders', $dataUpdate);
-            
+
+            if ( $this->db->update('tbl_orders', $dataUpdate)){
+                $error = false;
+            }else{
+                $error = true;
+            }
+            if (!$error){
+                    // Set your Merchant Server Key
+                \Midtrans\Config::$serverKey = 'SB-Mid-server-zsFu-QLYAN7mWpAsUOapWgmF';
+                // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+                \Midtrans\Config::$isProduction = false;
+                // Set sanitization on (default)
+                \Midtrans\Config::$isSanitized = true;
+                // Set 3DS transaction for credit card to true
+                \Midtrans\Config::$is3ds = true;
+                
+                $userInfo = $this->mglobal->getUserInfo($userId);
+
+                $params = array(
+                    'transaction_details' => array(
+                        'order_id' => $order_Id,
+                        'gross_amount' => $grandTotal,
+                    ),
+                    'customer_details' => array(
+                        'first_name' => $userInfo->full_name,
+                        'last_name' => '',   
+                        'email' => $userInfo->email,
+                        'phone' => $userInfo->phone_number,
+                    ),
+                );
+                
+                $snapToken = \Midtrans\Snap::getSnapToken($params);
+                if ($snapToken ){
+                    redirect('https://app.sandbox.midtrans.com/snap/v2/vtweb/'.$snapToken);
+                }
+            }
         }
-        redirect('cart/payment?orderId='.$noorder);
+       
     }
     
 
