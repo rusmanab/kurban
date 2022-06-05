@@ -14,7 +14,7 @@
 	
 	<section>
 		<div>
-			<img src="<?= base_url('assets/images/banner/');?>banner-promo.jpg" class="w-100">
+			<img src="<?= base_url('assets/images/banner/');?>banner_promo_kurban.png" class="w-100">
 		</div>
 	</section>
 	
@@ -215,7 +215,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<img src="<?= base_url('assets/images/banner/');?>child.jpg" class="w-100">
+					<img src="<?= base_url('assets/images/banner/');?>tcare_ntt.jpg" class="w-100">
 				</div>
 			</div>
 		</div>

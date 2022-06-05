@@ -13,7 +13,7 @@
 						<h2>Useful Link</h2>
 						<ul class="useful">
 							<li><a href="<?= site_url();?>">Home</a></li>
-							<li>History</li>
+							<li><a href="<?= site_url('history');?>">History</a></li>
 							<li><a href="https://tcare.id/" target="_blank">T.CARE</a></li>
 							<li><a href="<?= site_url('login');?>">Login / Register</a></li>
 						</ul>
@@ -35,7 +35,7 @@
 		</footer>
 
 		<div class="poswa"> <!-- 628111620333 -->
-			<a href="https://api.whatsapp.com/send?phone=628971504125&text=Assalamu'alaikum,%20Saya%20ingin%20tanya%20tentang%20kurban%20di%20T.CARE!" class="float" target="_blank">
+			<a href="https://api.whatsapp.com/send?phone=628111620333&text=Assalamu'alaikum,%20Saya%20ingin%20tanya%20tentang%20kurban%20di%20T.CARE!" class="float" target="_blank">
 				<span class="fa fa-whatsapp my-float"></span>
 			</a>
 		</div>
