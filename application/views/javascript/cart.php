@@ -1,6 +1,22 @@
 <script type="text/javascript">
 $(document).ready(function(e){
-    
+    $("#btnKupon").on("click", function(){
+		let voucher = $("#kupon").val();
+		$.ajax({
+			type: "post",
+            dataType: "json",
+			url: '<?=site_url('cart/checkvoucher')?>',
+			data: {
+				voucher: voucher,
+			},
+			cache: false,
+			success: function(respon) {
+				console.log(respon);
+		  	}
+		});
+
+	})
+	 
     $(".btn-plus").on("click", function(e){
         var rowId = $(this).attr("data-id");
         var qty = parseInt($("#qty" + rowId).val());

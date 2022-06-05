@@ -31,7 +31,28 @@ class Cart extends MY_Controller{
         
         $this->themes->display($view,$data);
     }
-    
+    public function checkVoucher(){
+
+       
+        $voucher    = $this->input->post('voucher', true);        
+
+        $res    = $this->mglobal->getVoucher($voucher);
+        if ($res){
+
+           $error = false;
+           $response['dataVoucher']= $res;
+        }else{  
+            $error = true;
+            $response['dataVoucher']= array();
+        }
+
+        $response['error']  = $error;
+
+        $this->output->set_status_header(200)
+            ->set_content_type('application/json')
+            ->set_output(json_encode($response));
+
+    }
     public function updateQty(){
         $id  = $this->input->post('rowId',TRUE);
         $qTy = $this->input->post('qty',TRUE);
@@ -105,100 +126,8 @@ class Cart extends MY_Controller{
         $this->mcart->remove($cartId);
         redirect('/cart');
     }
-    public function shipment(){
-        $this->load->model('mcart');
-        
-        
-        $this->load->library('rajaongkir');
-        
-        $regCss = array(                       
-                        base_url('assets/themes/themesv1/css/cart.css'),
-                        );
-        $this->themes->registerCsshead($regCss);
-        
-        $regJs = array(                       
-                        base_url('assets/js/simple.money.format.js'),
-                        );
-        
-        $this->themes->regsiterJsClosing($regJs);
-        
-        $regJs = 'javascript/shipment';
-        $this->themes->registerScript($regJs);
-        
-        $userId = $this->session->userdata('f_userid');
-        
-        if (!$userId){
-            redirect('/login');
-        }
-        $address = $this->mglobal->getDefaultAddress($userId);
-        if (!$address){
-            $url_return = uri_string();
-            redirect('myaccount/address/add?return='.$url_return);
-        }
-        // 456 tangerang
-        $tocityId = $address->city_id;
-        
-       
-        $view                   = 'shiptment';
-        $data['relatedProduk']  = $this->mglobal->getLatestProduk();
-      
-        $data['addres']         = $address;
-        
-        $data['carts']        = $this->mcart->listCart($userId);
-        $data['totalWeight']    = $this->mcart->totalWeight($userId);
-        
-        $data['kurir']          = $this->mglobal->getKurir();
-        
-        $this->themes->display($view,$data);
-        
-    }
+   
     
-    public function shipment2(){
-        $this->load->model('mcart');
-        
-        $cartId = $this->input->post("cartId", true);
-        $this->load->library('rajaongkir');
-        
-        $regCss = array(                       
-                        base_url('assets/themes/themesv1/css/cart.css'),
-                        );
-        $this->themes->registerCsshead($regCss);
-        
-        $regJs = array(                       
-                        base_url('assets/js/simple.money.format.js'),
-                        );
-        
-        $this->themes->regsiterJsClosing($regJs);
-        
-        $regJs = 'javascript/shipment';
-        $this->themes->registerScript($regJs);
-        
-        $userId = $this->session->userdata('f_userid');
-        
-        if (!$userId){
-            redirect('/login');
-        }
-        $address = $this->mglobal->getDefaultAddress($userId);
-        
-        // 456 tangerang
-        $tocityId = $address->city_id;
-        
-       
-        $view                   = 'shiptment';
-        $data['relatedProduk']  = $this->mglobal->getLatestProduk();
-        $data['classBody']      = 'cart';
-        $data['mcategoryHidden']= true;
-        $data['addres']         = $address;
-        
-        $data['cartId']         = $cartId;
-        $data['getCart']        = $this->mcart;
-        $data['totalWeight']    = $this->mcart->totalWeight($userId);
-        
-        $data['kurir']          = $this->mglobal->getKurir();
-        
-        $this->themes->display($view,$data);
-        
-    }
     public function payment(){
         $order_id = $this->input->get_post("orderId", true);
         
@@ -290,18 +219,14 @@ class Cart extends MY_Controller{
         
         $this->themes->display($view,$data);
     }
+    
     public function order_confirm(){
         
         $userId         = $this->getUserid();
         
         $address_id     = $this->input->post("address_id", true);
         $idCart         = $this->input->post("choose", true);
-        $kurir          = $this->input->post("kurir", true);
-        $infokurir      = $this->input->post("infokurir", true);
-        $priceShip      = $this->input->post("priceShip", true);
-        if ( !$priceShip ){
-            redirect('cart/shipment');
-        }
+        
         $date = date('Y-m-d H:i:s');
         
         $noorder = date('Ymd');
@@ -354,18 +279,7 @@ class Cart extends MY_Controller{
                     $total_diskon+= $diskon_price;
                 }
             }
-            $weigthKg = $grandWeight / 1000;
-            
-            $insertAny = array(
-                            'order_id'      => $order_Id,
-                            'keterangan'    => $kurir . " " . $infokurir . " / " . $weigthKg . " Kg",
-                            'price'         => $priceShip,                           
-                            );
-            $this->db->insert('tbl_order_detail2', $insertAny);
-            if ( $this->db->affected_rows() ){
-                $grandTotal+= $priceShip;
-            }
-            
+           
             
             $dataUpdate = array(
                             'total_price' => $grandTotal,
@@ -376,5 +290,34 @@ class Cart extends MY_Controller{
             
         }
         redirect('cart/payment?orderId='.$noorder);
+    }
+    
+
+    public function testBayar()
+    {
+        // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = 'SB-Mid-server-zsFu-QLYAN7mWpAsUOapWgmF';
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+        
+        $params = array(
+            'transaction_details' => array(
+                'order_id' => rand(),
+                'gross_amount' => 1250000,
+            ),
+            'customer_details' => array(
+                'first_name' => 'budi',
+                'last_name' => 'pratama',
+                'email' => 'budi.pra@example.com',
+                'phone' => '08111222333',
+            ),
+        );
+        
+        $snapToken = \Midtrans\Snap::getSnapToken($params);
+        var_dump($snapToken);
     }
 }
