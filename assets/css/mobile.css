@@ -178,6 +178,10 @@
 	.testimonial .carousel-inner {
 		height: 350px;
 	}
+	ul.navbarmenu a.nav-link {
+		font-size: 14px;
+		color: #212121 !important;
+	}
 }
 
 @media (min-width: 767px) {

@@ -3,7 +3,7 @@
 	<section>
 		<div class="dalil">
 			<div class="row no-gutter">
-				<div class="col-md-6" style="background: url(<?= base_url('assets/images/banner/');?>child.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+				<div class="col-md-6" style="background: url(<?= base_url('assets/images/banner/');?>rendang.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 				</div>
 				<div class="col-md-6 bg-login-white">
 					<div class="p-5">
