@@ -20,7 +20,9 @@
                     <?php if(empty($carts)){
                         echo '<p>Belum ada Produk di keranjang, Silahkan pilih order Kurban yang tersedia</p>';
                     } else{?>
-                    <?php echo form_open('cart/update_cart');?>
+                    <?php 
+					$attr = ['id'=>'formCart'];
+					echo form_open('cart/update_cart', $attr);?>
                     <table class="table">
 
                         <tr>
@@ -62,7 +64,7 @@
 								Masukan Voucher
 								<input type="text" name="kupon" id="kupon" class="form-control vouchercoupon" />
 								<button id="btnKupon" class="btn btn-default" type="button"><i class="fa fa-refresh"></i></button>
-							</td>
+							</td> 
 							<td style="text-align:right"><strong>0</strong></td>
 						</tr>
                         <tr>
@@ -73,7 +75,7 @@
                     <?php } ?>
 
  					<button class="btn btn-danger" style="float: right;">Delete</button>
- 					<button class="btn btn-success" style="float: right;">Checkout</button>
+ 					<button class="btn btn-success" id="checkout" type="button" style="float: right;">Checkout</button>
  					<button class="btn btn-primary" style="float: right;" id="pay-button">Update Cart</button>
                     <?php echo form_close();?>
 				</div>
@@ -88,69 +90,3 @@
 	</section>
 
 </main>
-
-<script type="text/javascript">
-	$("#btnKupon").on("click", function(){
-		
-
-	})
-	$('#pay-button').click(function (event) {
-		event.preventDefault();
-		$(this).attr("disabled", "disabled");
-
-		var qty = $(#id).val();
-		var nama_produk = $(#nama_produk).val();
-		var kategori = $(#kategori).val();
-		var harga = $(#harga).val();
-
-		$.ajax({
-			type: POST,
-			url: '<?=site_url()?>/snap/token',
-			data: {
-				qty = qty,
-				nama_produk = nama_produk,
-				kategori = kategori,
-				harga = harga
-			},
-			cache: false,
-
-			success: function(data) {
-	        //location = data;
-
-	        console.log('token = '+data);
-	        
-	        var resultType = document.getElementById('result-type');
-	        var resultData = document.getElementById('result-data');
-
-	        function changeResult(type,data){
-	        	$("#result-type").val(type);
-	        	$("#result-data").val(JSON.stringify(data));
-	          //resultType.innerHTML = type;
-	          //resultData.innerHTML = JSON.stringify(data);
-		      }
-
-		      snap.pay(data, {
-
-		      	onSuccess: function(result){
-		      		changeResult('success', result);
-		      		console.log(result.status_message);
-		      		console.log(result);
-		      		$("#payment-form").submit();
-		      	},
-		      	onPending: function(result){
-		      		changeResult('pending', result);
-		      		console.log(result.status_message);
-		      		$("#payment-form").submit();
-		      	},
-		      	onError: function(result){
-		      		changeResult('error', result);
-		      		console.log(result.status_message);
-		      		$("#payment-form").submit();
-		      	}
-		      });
-		  	}
-		});
-	});
-
-</script>
-    

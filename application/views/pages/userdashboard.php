@@ -16,7 +16,7 @@
 									<input type="text" class="form-control" id="full_name" name="full_name" value="<?= $userInfo->full_name;?>">
 								</div>
 								<div class="col-md-6">
-									<label for="phone_number" class="form-label">Nomor Telepon</label>
+									<label for="phone_number" class="form-label">Nomor Telepon</label> 
 									<input type="text" class="form-control" id="phone_number" name="phone_number" value="<?= $userInfo->phone_number;?>" readonly>
 								</div>
 								<div class="col-md-6">
