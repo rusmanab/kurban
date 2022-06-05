@@ -813,3 +813,16 @@ button#pay-button {
   font-size: 14px;
   margin-left: 5px;
 }
+
+ul.pagination li a {
+  font-size: 14px !important;
+}
+
+ul.pagination {
+  margin-top: 10px !important;
+}
+
+.checkout-top .btn-danger {
+  font-size: 14px;
+  margin-left: 5px;
+}

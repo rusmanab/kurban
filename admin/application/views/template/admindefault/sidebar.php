@@ -86,16 +86,16 @@
                             <li class="nav-item<?php echo $urlBase=='coupon' ? " active open":"" ?>">
                                 <a href="#" class="nav-link nav-toggle">
                                     <i class="icon-tag"></i>
-                                    <span class="title">Coupon</span>
+                                    <span class="title">Voucher</span>
                                     <span class="arrow<?php echo $urlBase=='coupon' ? " open":"" ?>"></span>
                                     <?php echo $urlBase=='coupon' ? '<span class="selected"></span>':'' ?>
                                 </a>
                                 <ul class="sub-menu">
                                     <li class="nav-item<?php echo $urlBase=='coupon' && !$url ? " active open":"" ?>">
-                                        <a href="<?php echo site_url('coupon') ?>" class="nav-link "> List Coupon </a>
+                                        <a href="<?php echo site_url('coupon') ?>" class="nav-link "> List Voucher </a>
                                     </li>
                                     <li class="nav-item<?php echo $url=='add'? " active open":"" ?>">
-                                        <a href="<?php echo site_url('coupon/add') ?>" class="nav-link "> Add Coupon</a>
+                                        <a href="<?php echo site_url('coupon/add') ?>" class="nav-link "> Add Voucher</a>
                                     </li>
                                 </ul>
                             </li>
