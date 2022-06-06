@@ -402,12 +402,30 @@ body.register_status {
   background: #046ba5;
 }
 
+body.register_status .mains {
+  margin-top: 70px;
+  margin-bottom: 5%;
+  background: #fff !important;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 body.profile {
   background: #046ba5;
 }
 
 body.checkout {
   background: #046ba5;
+}
+
+body.email_verification {
+  background: #046ba5;
+}
+
+body.email_verification .history-top {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 body.history {

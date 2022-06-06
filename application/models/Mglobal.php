@@ -82,7 +82,7 @@ class Mglobal extends CI_Model{
     
     
     public function getCategory($slug){
-        $q = "SELECT id,category_name,category_desc,image,image_big FROM tbl_category WHERE slug='".$slug."'";
+        $q = "SELECT id,category_name,category_desc,image,image_big FROM tbl_category WHERE slug='".$slug."' ORDER BY id ASC";
         $res = $this->db->query($q);
         
         return $res->row(); 
@@ -253,7 +253,7 @@ class Mglobal extends CI_Model{
         $q.= "LEFT JOIN tbl_product_category pc ON product_id = p.id ";
         $q.= "LEFT JOIN (SELECT * FROM tbl_product_discount WHERE level_id = '".$this->getLevel()."' ORDER BY id DESC)";
         $q.= " as pd ON pd.product_id = p.id ";
-        $q.= "WHERE pc.category_id='".$catId."' ORDER BY p.id"; //  DESC LIMIT 8
+        $q.= "WHERE pc.category_id='".$catId."' ORDER BY p.id ASC"; //  DESC LIMIT 8
         $res = $this->db->query($q);
         
         return $res->result();
@@ -926,7 +926,7 @@ class Mglobal extends CI_Model{
         }
         
         $q = "SELECT id,category_name, category_desc,slug,IFNULL(image,'') as image ";
-        $q.= "FROM tbl_category ".$WHERE." ORDER BY category_name " ;
+        $q.= "FROM tbl_category ".$WHERE." ORDER BY id ASC " ;
         $res = $this->db->query($q);
         
         return $res->result();

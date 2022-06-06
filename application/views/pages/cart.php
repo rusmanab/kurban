@@ -85,7 +85,7 @@
 
 	<section>
 		<div class="container">
-			<img src="<?= base_url('assets/images/banner/');?>banner-promo.jpg" class="w-100">
+			<img src="<?= base_url('assets/images/banner/');?>banner_promo_kurban.jpg" class="w-100">
 		</div>
 	</section>
 

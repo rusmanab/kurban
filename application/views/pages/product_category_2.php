@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<img src="<?= base_url("assets/images/background/");?>kat-yukawa-K0E6E0a0R3A-unsplash-700x990.jpg" class="w-100">
+					<img src="<?= base_url('' . $catgory->image_big);?>" class="w-100">
 				</div>
 				<div class="col-md-8">
 					<?= $catgory->category_desc ;?>

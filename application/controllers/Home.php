@@ -257,7 +257,7 @@ class Home extends CI_Controller{
 		
 		/*$recaptchaResponse = trim($this->input->post('g-recaptcha-response'));
         $userIp=$this->input->ip_address();*/
-			$secret='6LcXXD4aAAAAAOVsSBMUnEomyv6BCrfPB_jrQwV3'; // ini adalah Secret key yang didapat dari google, silahkan disesuaikan
+			$secret='6LcCR0sgAAAAAEOgSI4BC4spEqO7sam0gNrO6KE8'; // ini adalah Secret key yang didapat dari google, silahkan disesuaikan
 			$credential = array(
 				'secret' => $secret,
 				'response' => $this->input->post('g-recaptcha-response')

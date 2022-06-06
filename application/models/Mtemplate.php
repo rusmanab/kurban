@@ -3,7 +3,7 @@ class Mtemplate extends CI_Model{
     
     public function getKategory(){
         $q = "SELECT id,category_name,slug,IFNULL(image,'') as image,IFNULL(image_big,'') as image_big ";
-        $q.= "FROM tbl_category ORDER BY category_name ASC"; //  LIMIT 10
+        $q.= "FROM tbl_category ORDER BY id ASC"; //  LIMIT 10
         $res = $this->db->query($q);
         
         return $res->result();

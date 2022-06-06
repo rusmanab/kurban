@@ -50,7 +50,7 @@
                             	<input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Mohon isi kata sandi Anda" required>
 							</div>
 							<div class="mb-3">
-								<div class="g-recaptcha" data-sitekey="6LcXXD4aAAAAAKqbhCBrENReH91X3jdZ4NUn6WGu"></div>
+								<div class="g-recaptcha" data-sitekey="6LcCR0sgAAAAAOCSl9zytn7xGIGzZztTdYSPAWXq"></div>
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>

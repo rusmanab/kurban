@@ -10,9 +10,9 @@
 						<h2 class="mb-4">Terima Kasih sudah melakukan pembayaran.</h2>
 						
 						<?php
-						$pesan = "Pembayaran gagal";
-						$status = "Gagal";
-						$alert  = 'alert-danger';
+						$pesan = "Order telah kami terima, silahkan lakukan pembayaran";
+						$status = "Berhasil";
+						$alert  = 'alert-success';
 						$icon   = '<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"></use></svg>';
 						if ($statusPay){
 							$pesan = "Pembayaran sudah kami terima, terima kasih";
