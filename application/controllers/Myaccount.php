@@ -7,10 +7,11 @@ class Myaccount extends MY_Controller{
     }
     
     public function index(){        
-        $view = 'userdashboard';
-        $data['relatedProduk'] = $this->mglobal->getLatestProduk();
-        $userId   = $this->getUserid();
-        $userInfo = $this->mglobal->getUserInfo($userId);
+    
+        $view                   = 'userdashboard';
+        $data['relatedProduk']  = $this->mglobal->getLatestProduk();
+        $userId                 = $this->getUserid();
+        $userInfo               = $this->mglobal->getUserInfo($userId);
         
         $data['historyProduct'] = $this->mglobal->getLastSeenProduk($userId);
         $data['userInfo']       = $userInfo;
@@ -18,7 +19,9 @@ class Myaccount extends MY_Controller{
         $data['countTagihan']   = $this->mglobal->countTagihan($userId);
         $data['countTransaksi'] = $this->mglobal->countTransaksi($userId);
         $data['countWishList']  = $this->mglobal->countWishList($userId);
+        
         $this->themes->display($view,$data);
+    
     }
     
     public function _remap($method,$params=array())

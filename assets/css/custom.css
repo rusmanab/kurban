@@ -398,6 +398,10 @@ body.register {
   background: #046ba5;
 }
 
+body.register_status {
+  background: #046ba5;
+}
+
 body.profile {
   background: #046ba5;
 }
@@ -407,6 +411,10 @@ body.checkout {
 }
 
 body.history {
+  background: #046ba5;
+}
+
+body.payment {
   background: #046ba5;
 }
 

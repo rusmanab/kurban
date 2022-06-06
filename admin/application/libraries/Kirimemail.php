@@ -9,7 +9,7 @@ class Kirimemail {
     }	
     
     function kirim($view='',$data='',$absolutePath=false){
-        $from = "no-reply@excellent-scale.com";
+        $from = "no-reply@kurbandipelosok.com";
         
         $config['mailtype'] = 'html';
         $config['charset'] = 'utf-8';
@@ -25,7 +25,7 @@ class Kirimemail {
 
         $config['wordwrap'] = TRUE;
         
-        $subject                = "[Excellentscale] " .$data['subject'];
+        $subject                = "[KurbandiPelosok.com] " .$data['subject'];
         $email                  = $data['email'];
         
       
@@ -59,7 +59,7 @@ class Kirimemail {
 	
 	function kirimOld($view='',$data='',$absolutePath=false){
 	    
-        $from = "no-reply@excellent-scale.com";
+        $from = "no-reply@kurbandipelosok.com";
         
         /*
 		$config['mailtype']     = 'html';
@@ -93,7 +93,7 @@ class Kirimemail {
 
         $config['wordwrap'] = TRUE;
         
-        $subject                = "[Excellentscale] " .$data['subject'];
+        $subject                = "[KurbandiPelosok.com] " .$data['subject'];
         $email                  = $data['email'];
         
       
