@@ -1619,41 +1619,26 @@ class Api extends API_Controller{
     }
 
     
-
+    
     public function checkVoucher(){
 
         $userId     = $this->getUserid();
-
-        $voucher    = $this->input->post('voucher', true);
-
-        
+        $voucher    = $this->input->post('voucher', true);        
 
         $res    = $this->mglobal->getVoucher($voucher);
-
         if ($res){
 
            $error = false;
-
            $response['dataVoucher']= $res;
-
         }else{  
-
             $error = true;
-
             $response['dataVoucher']= array();
-
         }
-
-        
 
         $response['error']  = $error;
 
-        
-
         $this->output->set_status_header(200)
-
             ->set_content_type('application/json')
-
             ->set_output(json_encode($response));
 
     }

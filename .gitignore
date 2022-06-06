@@ -1,4 +1,7 @@
 /application/config/database.php
 /application/config/config.php
 /application/logs
+/admin/application/config/database.php
+/admin/application/config/config.php
+/admin/application/logs
 .htaccess

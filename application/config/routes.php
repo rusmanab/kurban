@@ -57,6 +57,7 @@ $route['myaccount'] = 'myaccount';
 $route['cart']      = 'cart';
 $route['api']       = 'api';
 $route['product']   = 'product';
+$route['payment']   = 'payment';
 $route['video']     = 'video';
 $route[':any']      = "home";
 //$route[':any']      = 'home';
