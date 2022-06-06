@@ -414,6 +414,10 @@ body.history {
   background: #046ba5;
 }
 
+body.payment {
+  background: #046ba5;
+}
+
 main.checkouts {
   margin-top: 70px;
   background: #fff;
