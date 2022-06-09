@@ -525,3 +525,7 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+$config['midtrans_key'] = "Mid-server-nOY-lVA0xobwCsLTzVAwLSaz"; //"SB-Mid-server-zsFu-QLYAN7mWpAsUOapWgmF";  
+$config['midtrans_production'] = true; //false;
+$config['midtrans_url'] = "https://app.midtrans.com/snap/v2/vtweb/"; // https://app.sandbox.midtrans.com/snap/v2/vtweb/
+

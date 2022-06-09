@@ -322,9 +322,13 @@ class Cart extends MY_Controller{
             }
             if (!$error){
                     // Set your Merchant Server Key
-                \Midtrans\Config::$serverKey = 'SB-Mid-server-zsFu-QLYAN7mWpAsUOapWgmF';
+                $midtrans_key = $this->config->item('midtrans_key');
+                $midtrans_production = $this->config->item('midtrans_production');
+                $midtrans_url        = $this->config->item('midtrans_url');
+
+                \Midtrans\Config::$serverKey = $midtrans_key; 
                 // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-                \Midtrans\Config::$isProduction = false;
+                \Midtrans\Config::$isProduction = $midtrans_production;
                 // Set sanitization on (default)
                 \Midtrans\Config::$isSanitized = true;
                 // Set 3DS transaction for credit card to true
@@ -334,7 +338,7 @@ class Cart extends MY_Controller{
 
                 $params = array(
                     'transaction_details' => array(
-                        'order_id' => $order_Id,
+                        'order_id' => $noorder,
                         'gross_amount' => $grandTotal,
                     ),
                     'customer_details' => array(
@@ -347,7 +351,7 @@ class Cart extends MY_Controller{
                 
                 $snapToken = \Midtrans\Snap::getSnapToken($params);
                 if ($snapToken ){
-                    redirect('https://app.sandbox.midtrans.com/snap/v2/vtweb/'.$snapToken);
+                    redirect($midtrans_url.$snapToken);
                 }
             }
         }

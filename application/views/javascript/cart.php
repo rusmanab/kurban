@@ -1,7 +1,13 @@
 <script type="text/javascript">
 $(document).ready(function(e){
     $("#btnKupon").on("click", function(){
-       
+        let subtotal = document.getElementsByName('subtotal[]');
+        let granTotal= 0;
+        for (let i = 0; i < subtotal.length; i++) {
+            
+            granTotal+= parseFloat(subtotal[i].value);
+        }
+        console.log( granTotal );
 		let voucher = $("#kupon").val();
 		$.ajax({
 			type: "post",
@@ -13,6 +19,26 @@ $(document).ready(function(e){
 			cache: false,
 			success: function(respon) {
 				console.log(respon);
+             
+                if ( respon.error ){
+                    $("#ketDiskon").text("");
+                    $("#lbl-diskon").text("0");
+
+                }else{                   
+
+                    let numb = respon.dataVoucher.value;
+                    let format = numb.toString().split('').reverse().join('');
+                    let convert = format.match(/\d{1,3}/g);
+                    let diskon =  convert.join(',').split('').reverse().join('');
+                    $("#ketDiskon").text("("+ respon.dataVoucher.coupon_name +")");
+                    $("#lbl-diskon").text(diskon); // grand-Total
+                    granTotal = granTotal - parseFloat(respon.dataVoucher.value);
+                }
+
+                format = granTotal.toString().split('').reverse().join('');
+                convert = format.match(/\d{1,3}/g);
+                granTotal =  convert.join(',').split('').reverse().join('')
+                $("#grand-Total").text(granTotal);
 		  	}
 		});
 

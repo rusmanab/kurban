@@ -7,14 +7,18 @@ class Payment extends CI_Controller{
         $this->load->model('mglobal');
     }
     public function index(){
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-zsFu-QLYAN7mWpAsUOapWgmF';
+        $midtrans_key = $this->config->item('midtrans_key');
+        $midtrans_production = $this->config->item('midtrans_production');
+        \Midtrans\Config::$serverKey = $midtrans_key;
               
         //$notif = new \Midtrans\Notification();
         $notif = json_decode(file_get_contents('php://input'), true);
         $date = date('Y-m-d H:i:s');
+        $noorder = $notif->order_id;
+        $detailOrder = $this->mglobal->detailOrderByNoOrder($noorder);
 
         $data = [
-            'order_id'    => $notif->order_id,
+            'order_id'    => $detailOrder->id,
             'value'       => json_encode($notif),
             'created_date'=> $date 
         ];
@@ -57,13 +61,11 @@ class Payment extends CI_Controller{
                   $status = 12;
             }
     
-            $detailOrder = $this->mglobal->detailOrder($notif->order_id);
-            $noorder     = $detailOrder->no_order;
     
             $dataUpdate = array(
                 'status_id'   => $status
                 );
-            $this->db->where('id', $notif->order_id);
+            $this->db->where('id', $detailOrder->id);
             
     
             if ( $this->db->update('tbl_orders', $dataUpdate)){
@@ -77,7 +79,7 @@ class Payment extends CI_Controller{
                 }
                 $tbl_order_history = [
                     'no_order'      => $noorder,
-                    'order_id'      => $notif->order_id,
+                    'order_id'      => $detailOrder->id,
                     'comment'       => $comment,
                     'status_id'     => $status,
                     'customer_notif'=> $comment,
@@ -92,15 +94,16 @@ class Payment extends CI_Controller{
 
     public function success()
     {
-        $order_id = $this->input->get_post('order_id', true);
+        $noorder = $this->input->get_post('order_id', true);
         $status_code = $this->input->get_post('status_code', true);
         $transaction = $this->input->get_post('transaction_status', true);
         $statusPay = false;
         if ( $transaction == 'capture' || $transaction == 'settlement' ){
             $statusPay = true;
         }
-        $detailOrder = $this->mglobal->detailOrder($order_id);
+        $detailOrder = $this->mglobal->detailOrderByNoOrder($noorder);
         $fraud = 'challenge';
+        $status = 2;
         if ($transaction == 'capture') {
             if ($fraud == 'challenge') {
               // TODO Set payment status in merchant's database to 'challenge'
@@ -130,13 +133,14 @@ class Payment extends CI_Controller{
         $date = date('Y-m-d H:i:s');
         
        
-        if (!$detailOrder['orders']){
+        if (!$detailOrder){
             $this->themes->display('ordernotfound');
          
         }else{
-            if ( $detailOrder['orders']->status_id != 3 ){
-                $noorder     = $detailOrder['orders']->no_order;
-        
+            if ( $detailOrder->status_id != 3 ){
+              
+                $order_id    = $detailOrder->id;
+
                 $dataUpdate = array(
                     'status_id'   => $status
                     );

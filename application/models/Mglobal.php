@@ -789,7 +789,14 @@ class Mglobal extends CI_Model{
         
         return $res->result();
     }
-    
+    public function detailOrderByNoOrder($no_order){
+        $q = "SELECT * FROM tbl_orders WHERE no_order='".$no_order."'";
+
+        $res = $this->db->query($q);        
+        $res = $res->row();
+
+        return $res;
+    }
     public function detailOrder($orderId){
         $q = "SELECT o.*, u.email,u.full_name, ua.recipient, ua.phone_number, ua.address, ua.postal_code ";
         $q.= ",ua.province ,ua.city,b.nama_pembayaran FROM tbl_orders o ";
