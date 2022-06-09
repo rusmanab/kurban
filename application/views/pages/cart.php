@@ -3,7 +3,11 @@
             data-client-key="Mid-client-9hY6A1D3piaFWjRj"></script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+<style>
+    .bold{
+        font-weight: bold;
+    }
+</style>
 <main class="checkouts">
 	
 	<section class="checkout-top">
@@ -51,6 +55,7 @@
                                 }
                                 ?>
                                 Rp. <?php echo $price; ?>
+                                <input type="hidden" name="subtotal[]" class="subtotal" value="<?php echo $c->price; ?>" />
                             </td>
                             
                                 <?php
@@ -64,12 +69,14 @@
 								Masukan Voucher
 								<input type="text" name="kupon" id="kupon" class="form-control vouchercoupon" />
 								<button id="btnKupon" class="btn btn-default" type="button"><i class="fa fa-refresh"></i></button>
-							</td> 
-							<td style="text-align:right"><strong>0</strong></td>
+                                <label id="ketDiskon"></label>
+                            </td> 
+                            
+							<td style="text-align:right"><div class="bold">- Rp. <label id="lbl-diskon">0</label></div></td>
 						</tr>
                         <tr>
 							<td colspan="2"><strong>Total</strong></td>
-							<td style="text-align:right"><strong>Rp. <?php echo number_format($grand_total); ?></strong></td>
+							<td style="text-align:right"><div class="bold">Rp. <label id="grand-Total"><?php echo number_format($grand_total); ?></label></div></td>
 						</tr>
                     </table>
                     <?php } ?>
