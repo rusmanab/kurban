@@ -290,11 +290,11 @@ class Cart extends MY_Controller{
                     );   
                     if ( $this->db->insert('tbl_coupon_history', $insertCoupon)){
                         $total_diskon+= $res->value;
-                        $total_diskon-= $res->value;
+                        $grandTotal-= $res->value;
                     }
                 }
             }
-
+          
            $error = false;
             
             $dataUpdate = array(
